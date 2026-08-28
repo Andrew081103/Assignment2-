@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html>
+    
+    <head>
+    <title>Icon Template Square</title>
+        
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/buzz/1.2.0/buzz.min.js"></script>
+        
+        <style>
+            .row{
+                width:720px;
+                margin: 10px auto 10px auto ;
+            }
+            .image-container {
+                display: table-cell;
+                vertical-align: middle;
+                padding:20px;
+            }
+
+            body{
+                background-color: hwb(63 89% 1% / 0.87);
+            }
+        </style>
+
+    </head>
+
+    <body>
+
+             onmousedown= "this.src='icon/squ_ro.png';"
+                    onmouseup= "this.src='icon/squ.png';"/>
+        
+       
+
+        
+    
+        <div class="row">
+            <div class="image-container"><img id="img4" src="icon/asset 1.svg" onmouseover= "this.src='icon/asset 2.svg';"
+                    onmouseout= "this.src='icon/asset 1.svg';" height="200" width="200"/></div>
+            <div class="image-container"><img id="img5" src="icon/asset 2.svg" height="200" width="200"/></div>
+            <div class="image-container"><img id="img6" src="icon/asset 3.svg" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img4" src="icon/asset 4.svg" height="200" width="200"/></div>
+            <div class="image-container"><img id="img5" src="icon/asset 5.svg" height="200" width="200"/></div>
+            <div class="image-container"><img id="img6" src="icon/asset 6.svg" height="200" width="200"/></div>
+            </div>
+
+        <div class="row">
+            <div class="image-container"><img id="img7" src="icon/asset 7.svg" height="200" width="200"/></div>
+            <div class="image-container"><img id="img8" src="icon/asset 8.svg" height="200" width="200"/></div>
+            <div class="image-container"><img id="img9" src="icon/asset 9.svg" height="200" width="200"/></div>
+        </div>
+        
+        <script>
+            var sound1 = new buzz.sound("sound/sound 1.wav");
+            var sound2 = new buzz.sound("sound/sound2.wav");
+            var sound3 = new buzz.sound("sound/sound3.wav");
+            var sound4 = new buzz.sound("sound/sound4.wav");
+            var sound5 = new buzz.sound("sound/sound5.wav");
+            var sound6 = new buzz.sound("sound/sound6.wav");
+            var sound7 = new buzz.sound("sound/sound7.wav");
+            var sound8 = new buzz.sound("sound/sound8.wav");
+            var sound9 = new buzz.sound("sound/sound9.wav");
+     
+            window.onload = function() {
+                document.getElementById('img1').addEventListener('click', function () {sound1.play(); });  
+                document.getElementById('img2').addEventListener('click', function () {sound2.play(); });
+                document.getElementById('img3').addEventListener('click', function () {sound3.play(); });
+                document.getElementById('img4').addEventListener('click', function () {sound4.play(); });
+                document.getElementById('img5').addEventListener('click', function () {sound5.play(); }); 
+                document.getElementById('img6').addEventListener('click', function () {sound6.play(); }); 
+                document.getElementById('img7').addEventListener('click', function () {sound7.play(); }); 
+                document.getElementById('img8').addEventListener('click', function () {sound8.play(); }); 
+                document.getElementById('img9').addEventListener('click', function () {sound9.play(); });
+            }  
+        </script>   
+        
+    </body>
+    
+</html>
